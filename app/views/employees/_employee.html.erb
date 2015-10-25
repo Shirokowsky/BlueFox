@@ -1,0 +1,17 @@
+<div class="block">
+  <h3><%= employee.name %></h3>
+  <b>Salary:</b><i><%= employee.salary %></i>
+  <br/>
+  <% if employee.skills %>
+    <small>
+      <% employee.skills.each do |s| %>
+          <%= s.name %>
+      <% end %>
+    </small>
+  <% end %>
+
+  <div class="buttons">
+    <%= link_to 'show', employee %>
+    <%= link_to 'edit', edit_employee_path(employee) %>
+  </div>
+</div>

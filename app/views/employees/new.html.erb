@@ -1,0 +1,8 @@
+<% title 'New Employee' %>
+<% menu 'cancel', employees_path %>
+
+<%= render 'form' %>
+
+<div class="center">
+  <%= link_to 'create new skill', new_skill_path, id: 'add_skill', remote: true %>
+</div>
